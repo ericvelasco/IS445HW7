@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Views/css/styles.css")" type="text/css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<header>
+    <h1 class="header">Velasco, Eric Homework 3</h1>
+    <hr class="breakline" />
+    <nav>
+        @Html.ActionLink("Home", "Index")
+        @Html.ActionLink("Web Form Demo", "Webform")
+        @Html.ActionLink("About Me", "About")
+    </nav>
+</header>
+<body>
+    @RenderBody()
+</body>
+<footer>
+    <span>Eric Velasco &copy Contact Information</span>
+    <address>
+        <span><a href="#">Email: ericvelasco1@gmail.com</a></span>
+        <span>Phone: (310) 427-2130</span>
+    </address>
+</footer>
+
+</html>
